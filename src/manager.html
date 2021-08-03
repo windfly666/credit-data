@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>教师</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="fixed-navigation">
+    <div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+
+                            <span class="text-muted text-xs block">教师<b class="caret"></b></span>
+                        </a>
+                        <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                            <li><a class="dropdown-item" href="profile.html">个人信息</a></li>
+                            <li class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="login.html">登出</a></li>
+                        </ul>
+                    </div>
+                    <div class="logo-element">
+                        IN+
+                    </div>
+                </li>
+
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">个人管理</span> <span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="luru_tea_xinxi.html">录入个人信息</a></li>
+                        <li><a href="tea_cha_geren.html">查询个人信息</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">学生培养管理</span></a>
+                    <ul class="nav nav-second-level">
+                        <li><a href="luru_tea_xueqi.html">录入学期信息</a></li>
+                          <li><a href="luru_tea_xuan_score.html">录入选修学分</a></li>
+                        <li><a href="luru_tea_kecheng.html">录入课程信息</a></li>
+                      <li><a href="luru_tea_pingyu.html">录入学生成绩</a></li>
+                        <li><a href="luru_tea_chexiao.html">学生信息撤销</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">毕业管理</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="tea_cha_biye.html">学生毕业查询</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">学生成就管理</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                      <li><a href="luru_tea_chengjiu.html">录入学生成就</a></li>
+                      <li><a href="tea_cha_chengjiu.html">查询学生成就</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">企业信息</span> <span class="float-right label label-primary">特别</span></a>
+                    <ul class="nav nav-second-level collapse">
+                      <li><a href="tea_shouquan_qiye.html">企业信息授权</a></li>
+                      <li><a href="tea_cha_qiye.html">查询企业信息</a></li>
+                    </ul>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+    </nav>
+
+        <div id="page-wrapper" class="gray-bg sidebar-content">
+          <div class="row border-bottom">
+          <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+            </div>
+            <h2 class="m-r-sm text-muted welcome-message">欢迎来到学信数据管理系统后台教师端</h2>
+                <ul class="nav navbar-top-links navbar-right">
+                    <li>
+                        <a href="index.html">
+                            <i class="fa fa-sign-out"></i> 注销
+                        </a>
+                    </li>
+                    <li>
+                        <a class="right-sidebar-toggle">
+                            <i class="fa fa-tasks"></i>
+                        </a>
+                    </li>
+          </nav>
+          </div>
+
+            <div class="sidebar-panel">
+                <div class="m-t-md">
+                          <div class="form-group row">
+                              <div class="col-lg-offset-2 col-lg-14">
+                              <button id ="button_tea_cha_renshu" class="btn btn-sm btn-primary float-right m-t-n-xs" type="submit"><strong>查看学院人数</strong></button>
+                              </div>
+                          </div>
+                          <h3 id = "cha_ren_shu" class="text-left">
+                          </h3>
+                          <div class="form-group row">
+                              <div class="col-lg-offset-2 col-lg-14">
+                              <button id ="button_tea_cha_geren" class="btn btn-sm btn-primary float-right m-t-n-xs" type="submit"><strong>查看个人信息</strong></button>
+                              </div>
+                          </div>
+                          <div class="form-group row">
+                              <div class="col-lg-offset-2 col-lg-14">
+                              <button id ="button_tea_cha_biye_renshu" class="btn btn-sm btn-primary float-right m-t-n-xs" type="submit"><strong>查看毕业人数</strong></button>
+                              </div>
+                          </div>
+                           <h3 id = "cha_biye_ren_shu" class="text-left">
+                            </h3>
+
+                      </div>
+            </div>
+
+
+
+            
+            <div class="wrapper wrapper-content">
+                <div class="row">
+                    <div class="col-lg-12" >
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <div class="form-group row">
+
+                                    <div class="col-lg-offset-2 col-lg-10">
+                                    <button id ="button_cha_qiye_liebiao" class="btn btn-sm btn-primary float-right m-t-n-xs" type="submit"><strong>点击查看企业申请地址</strong></button>
+                                    </div>
+                                </div>
+                                <div class="ibox-tools">
+                                    <a class="collapse-link">
+                                        <i class="fa fa-chevron-up"></i>
+                                    </a>
+                                </div>
+                                <div id = "show_qiye_liebiao" class="text-left">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12" >
+                        <div class="ibox ">
+                          <div class="ibox ">
+                              <div class="ibox-title">
+                                <div class="form-group row"><label class="col-sm-2 col-form-label">企业地址:</label>
+                                    <div class="col-sm-10"><input id= "shouquan_qiye_dizhi" type="text" class="form-control" placeholder=""></div>
+                                </div>
+                                  <div class="form-group row">
+
+                                      <div class="col-lg-offset-2 col-lg-10">
+
+                                      <button id ="button_shouquan_qiye" class="btn btn-sm btn-primary float-right m-t-n-xs" type="submit"><strong>给予企业授权登录权限</strong></button>
+                                      </div>
+                                  </div>
+                                  <div class="ibox-tools">
+                                      <a class="collapse-link">
+                                          <i class="fa fa-chevron-up"></i>
+                                      </a>
+                                  </div>
+                                  <div id = "show_qiye_liebiao" class="text-left">
+                                  </div>
+                              </div>
+
+                          </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-12">
+                    <div class="ibox ">
+                      <div class="ibox ">
+                          <div class="ibox-title">
+                            <div class="form-group row"><label class="col-sm-2 col-form-label">课程编号:</label>
+                                <div class="col-sm-10"><input id= "cha_class_score_id" type="text" class="form-control" placeholder=""></div>
+                            </div>
+                              <div class="form-group row">
+                                  <div class="col-lg-offset-2 col-lg-10">
+                                  <button id ="tea_cha_score_button" class="btn btn-sm btn-primary float-right m-t-n-xs" type="submit"><strong>点击查看学生课程成绩</strong></button>
+                                  </div>
+                              </div>
+                              <div class="ibox-tools">
+                                  <a class="collapse-link">
+                                      <i class="fa fa-chevron-up"></i>
+                                  </a>
+                              </div>
+                              <div id = "show_stu_chengji" class="text-left">
+                              </div>
+                          </div>
+
+                      </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-12">
+                    <div class="ibox ">
+                      <div class="ibox ">
+                          <div class="ibox-title">
+                            <div id="tab-2" class="tab-pane">
+                                <div class="panel-body">
+                                          <div class="form-group row"><label class="col-sm-2 col-form-label">学生地址:</label>
+                                              <div class="col-sm-10"><input id= "chabiyedizhi" type="text" class="form-control" placeholder="0x000..."></div>
+                                          </div>
+
+                                </div>
+                                <div class="panel-body">
+                                  <div class="col-lg-offset-2 col-lg-10">
+                                  <button id = "biye_cha_stu_button" class="btn btn-sm btn-primary float-right m-t-n-xs" type="submit"><strong>查询毕业生的信息</strong></button>
+                                  </div>
+                                  <div class="form-group row">
+                                  </div>
+                                  <div class="col-lg-offset-2 col-lg-10">
+                                    <button id = "biye_cha_kecheng_button" class="btn btn-sm btn-primary float-right m-t-n-xs" type="submit"><strong>查询毕业生课程信息</strong></button>
+                                  </div>
+                                  <div class="form-group row">
+                                  </div>
+                                  <div class="col-lg-offset-2 col-lg-10">
+                                    <button id = "biye_cha_chengjiu_button" class="btn btn-sm btn-primary float-right m-t-n-xs" type="submit"><strong>查询毕业生成就信息</strong></button>
+                                  </div>
+                                </div>
+                            </div>
+                              <div class="ibox-tools">
+                                  <a class="collapse-link">
+                                      <i class="fa fa-chevron-up"></i>
+                                  </a>
+                              </div>
+                              <div id = "stu_cha_biye_xuesheng" class="col-lg-12">
+
+                                                         <div class="ibox ">
+                                                             <div class="ibox-title">
+                                                                 <h2>毕设生信息</h2>
+                                                                 <div class="ibox-tools">
+                                                                     <a class="close-link">
+                                                                         <i class="fa fa-times"></i>
+                                                                     </a>
+                                                                 </div>
+                                                             </div>
+                                                             <div class="ibox-content">
+                                                                 <table class="table">
+                                                                     <thead>
+                                                                     <tr>
+                                                                         <th>学生姓名</th>
+                                                                         <th>学生学号</th>
+                                                                         <th>学生学院</th>
+                                                                         <th>学生专业</th>
+                                                                         <th>学生班级</th>
+                                                                         <th>学生出生年月日</th>
+                                                                         <th>学生联系号码</th>
+                                                                         <th>学生党籍信息</th>
+                                                                     </tr>
+
+                                                                     </thead>
+
+                                                                   <thead id = "ceshi1">
+
+                                                                   </thead>
+                                                                 </table>
+                                                             </div>
+                                                         </div>
+                              </div>
+                              <div id = "stu_cha_biye_kecheng" class="col-lg-12">
+
+                                                         <div class="ibox ">
+                                                             <div class="ibox-title">
+                                                                 <h2>毕业生课程信息</h2>
+                                                                 <div class="ibox-tools">
+                                                                     <a class="close-link">
+                                                                         <i class="fa fa-times"></i>
+                                                                     </a>
+                                                                 </div>
+                                                             </div>
+                                                             <div class="ibox-content">
+                                                                 <table class="table">
+                                                                     <thead>
+                                                                     <tr>
+                                                                         <th>课程姓名</th>
+                                                                         <th>课程编号</th>
+                                                                         <th>课程学分</th>
+                                                                         <th>任课老师</th>
+                                                                         <th>课程成绩</th>
+                                                                         <th>课程性质</th>
+                                                                         <th>教师评语</th>
+                                                                     </tr>
+
+                                                                     </thead>
+
+                                                                   <thead id = "ceshi2">
+
+                                                                   </thead>
+                                                                 </table>
+                                                             </div>
+                                                         </div>
+                              </div>
+                              <div id = "stu_cha_biye_chengjiu" class="col-lg-12">
+
+                                                         <div class="ibox ">
+                                                             <div class="ibox-title">
+                                                                 <h2>毕业生成就信息</h2>
+                                                                 <div class="ibox-tools">
+                                                                     <a class="close-link">
+                                                                         <i class="fa fa-times"></i>
+                                                                     </a>
+                                                                 </div>
+                                                             </div>
+                                                             <div class="ibox-content">
+                                                                 <table class="table">
+                                                                     <thead>
+                                                                     <tr>
+                                                                         <th>学生姓名</th>
+                                                                         <th>学生编号</th>
+                                                                         <th>四/六级成绩</th>
+                                                                         <th>成就</th>
+                                                                     </tr>
+
+                                                                     </thead>
+
+                                                                   <thead id = "ceshi3">
+
+                                                                   </thead>
+                                                                 </table>
+                                                             </div>
+                                                         </div>
+                              </div>
+                          </div>
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <h1 id="datetime" class="col-lg-10">
+                <script>
+                    setInterval("document.getElementById('datetime').innerHTML=new Date().toLocaleString();", 1000);
+                </script>
+            </h1>
+        </div>
+
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Flot -->
+    <script src="js/plugins/flot/jquery.flot.js"></script>
+    <script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+    <script src="js/plugins/flot/jquery.flot.spline.js"></script>
+    <script src="js/plugins/flot/jquery.flot.resize.js"></script>
+    <script src="js/plugins/flot/jquery.flot.pie.js"></script>
+    <script src="js/plugins/flot/jquery.flot.symbol.js"></script>
+    <script src="js/plugins/flot/curvedLines.js"></script>
+
+    <!-- Peity -->
+    <script src="js/plugins/peity/jquery.peity.min.js"></script>
+    <script src="js/demo/peity-demo.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <!-- Jvectormap -->
+    <script src="js/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+    <script src="js/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- Sparkline -->
+    <script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!-- Sparkline demo data  -->
+    <script src="js/demo/sparkline-demo.js"></script>
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+  <script src="js-s/app.js"></script>
+  <span id=localtime></span>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+admin.nodeInfo.enode
+miner.start()
+miner.stop()
+miner.start()

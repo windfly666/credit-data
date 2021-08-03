@@ -1,0 +1,23 @@
+var myEvent = artifacts.require("./myEvent.sol");
+var all = artifacts.require("./all.sol");
+var biye_show = artifacts.require("biye_show");
+var cha = artifacts.require("./cha.sol");
+var lu_class = artifacts.require("./lu_class.sol");
+var luruchengji = artifacts.require("./luruchengji");
+var xuan = artifacts.require("./xuan");
+var lu_chengjiu = artifacts.require("./lu_chengjiu");
+var chengjidan = artifacts.require("./chengjidan");
+var qiye_xinxi = artifacts.require("./qiye_xinxi");
+module.exports = function(deployer) {
+   deployer.deploy(myEvent);
+   deployer.deploy(all);
+   // deployer.deploy(cha);
+   // deployer.deploy(lu_class);
+   // deployer.deploy(luruchengji);
+   // deployer.deploy(xuan);
+   // deployer.deploy(biye_show);
+   // deployer.deploy(lu_chengjiu);
+   // deployer.deploy(lu_chengjiu);
+   // deployer.deploy(chengjidan);
+   // deployer.deploy(qiye_xinxi);
+};

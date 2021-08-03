@@ -1,0 +1,37 @@
+=============== Jun 16, 2020 (CST) ===============
+23:52:44.641688 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:52:44.644680 db@open opening
+23:52:44.645678 version@stat F·[] S·0B[] Sc·[]
+23:52:44.646674 db@janitor F·2 G·0
+23:52:44.646674 db@open done T·1.9943ms
+=============== Jun 16, 2020 (CST) ===============
+23:54:35.261436 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:54:35.262431 version@stat F·[] S·0B[] Sc·[]
+23:54:35.262431 db@open opening
+23:54:35.262431 journal@recovery F·1
+23:54:35.264427 journal@recovery recovering @1
+23:54:35.267419 memdb@flush created L0@2 N·624 S·50KiB "\x02d\xfc..\x19Ba,v281":"\xfe\x88\xcf..H\xef\xcc,v513"
+23:54:35.270428 version@stat F·[1] S·50KiB[50KiB] Sc·[0.25]
+23:54:35.275398 db@janitor F·3 G·0
+23:54:35.275398 db@open done T·12.9669ms
+23:56:38.050197 db@close closing
+23:56:38.050197 db@close done T·0s
+=============== Jun 16, 2020 (CST) ===============
+23:57:14.819344 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+23:57:14.819344 version@stat F·[1] S·50KiB[50KiB] Sc·[0.25]
+23:57:14.819344 db@open opening
+23:57:14.819344 journal@recovery F·1
+23:57:14.822335 journal@recovery recovering @3
+23:57:14.825330 memdb@flush created L0@5 N·49 S·2KiB "Blo..ion,v626":"r\x00\x00..\xcf&E,v670"
+23:57:14.830315 version@stat F·[2] S·53KiB[53KiB] Sc·[0.50]
+23:57:14.834304 db@janitor F·4 G·0
+23:57:14.834304 db@open done T·14.9594ms
+23:58:16.331935 table@compaction L0·2 -> L1·0 S·53KiB Q·706
+23:58:16.338917 table@build created L1@8 N·658 S·52KiB "\x02d\xfc..\x19Ba,v281":"\xfe\x88\xcf..H\xef\xcc,v513"
+23:58:16.338917 version@stat F·[0 1] S·52KiB[0B 52KiB] Sc·[0.00 0.00]
+23:58:16.339915 table@compaction committed F-1 S-348B Ke·0 D·15 T·7.9796ms
+23:58:16.341909 table@remove removed @5
+23:58:16.344901 table@remove removed @2
+=============== Jun 17, 2020 (CST) ===============
+00:01:15.987858 db@close closing
+00:01:15.988856 db@close done T·997.8µs

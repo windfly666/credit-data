@@ -1,0 +1,7 @@
+admin.addPeer("enode://b060705e0bd2dc8d9760a77db3772b5e75b69610dd9b95bdb15f44990c602072da8a96a9584956cda76123492bde7b498438f6ca94e3ac2e2e28ff9c62e4a7d5@[::]:30306?discport=0")
+admin.peers
+miner.start()
+miner.stop()
+admin.addPeer("enode://b060705e0bd2dc8d9760a77db3772b5e75b69610dd9b95bdb15f44990c602072da8a96a9584956cda76123492bde7b498438f6ca94e3ac2e2e28ff9c62e4a7d5@[::]:30306?discport=0")
+admin.peers
+miner.start()

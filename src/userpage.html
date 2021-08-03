@@ -1,0 +1,84 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>userpage</title>
+  </head>
+  <body>
+    <div class="container">
+            <h1>用户地址</h1>
+            <h2 id="info"></h2>
+            <label for="user" class="col-lg-2 control-label"></label>
+            <input id="user" type="text">
+            <button id="button_dizhi">确认用户地址</button>
+    </div>
+<div>
+   <h1>录入信息</h1>
+   姓名: <input type="text" id="StuName"  />
+   学号：<input type="text" id="StuId"  />
+   专业：<input type="text" id="StuZhuan"  />
+   <button id="button_stu_luru">录入</button>
+ </div>
+
+  <div>
+    <button id="button_show_stu">显示所有用户信息</button>
+  </div>
+  <div id="showStu"></div>
+
+  <div>
+     <h1>查看所有选修课程信息</h1>
+     <button id="button_cha_xuan_class_">选修课程id查询</button>
+   </div>
+   <div id = "show_xuan_class"></div>
+
+   <div>
+      <h1>输入选修课程ID</h1>
+      课程编号: <input type="text" id="xuan_class_name"  />
+      <button id="button_xuan_class_by_name">选修</button>
+    </div>
+
+    <div>
+       <h1>查看所有课程信息</h1>
+       <button id="button_cha_all_class">查看课程</button>
+       <div id="show_class"></div>
+     </div>
+     <div>
+        <h1>查看所有课程成绩</h1>
+        <button id="button_show_stu1">查看成绩</button>
+        <div id="show_class_score"></div>
+      </div>
+
+      <div>
+         <h1>查看学分</h1>
+         <button id="button_show_xuefen">查看学分</button>
+         <div id="chakanxuefen"></div>
+       </div>
+
+       <div>
+          <h1>重修课程</h1>
+          课程编号: <input type="text" id="chongxiu_id"  />
+          <button id="chongxiu_button">重修</button>
+          <div id="chongxiu_show"></div>
+        </div>
+
+        <div>
+           <h1>本学年是否通过</h1>
+           学生Id: <input type="text" id="xue_id"  />
+           本学期: <input type="text" id="xuenian"  />
+           <button id="pass_term">查看是否通过本学年</button>
+           <div id="xuenian_show"></div>
+         </div>
+         <div>
+            <h1>毕业</h1>
+            学生Id: <input type="text" id="biye_xue_id"  />
+            <button id="biye_button">是否达到毕业</button>
+            <div id="biye_show"></div>
+          </div>
+
+
+
+ <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script language="javascript" type="text/javascript" src="js/web3.min.js"></script>
+ <script language="javascript" type="text/javascript" src="js/truffle-contract.js"></script>
+ <script src="js-s/app.js"></script>
+</body>
+</html>
